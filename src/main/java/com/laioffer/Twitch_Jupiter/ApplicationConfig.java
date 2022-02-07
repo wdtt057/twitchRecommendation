@@ -24,9 +24,9 @@ public class ApplicationConfig {
 
     @Bean(name = "dataSource")
     public DataSource dataSource() {
-        String RDS_ENDPOINT = "YOUR_RDS_INSTANCE_ADDRESS"; //Replace
-        String USERNAME = "YOUR DATABASE USERNAME";//Replace
-        String PASSWORD = "YOUR DATABASE PASSWORD";//Replace
+        String RDS_ENDPOINT = "YOUR_RES_ADDRESS";
+        String USERNAME = "YOUR_USERNAME";
+        String PASSWORD = "YOUR_PASSWORD";
         //RDS_INSTANCE_ADDRESS,USERNAME,PASSWORD
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
